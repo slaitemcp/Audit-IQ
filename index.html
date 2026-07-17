@@ -6,7 +6,7 @@
   ║  All rights reserved. Proprietary and confidential.         ║
   ║  Unauthorised use strictly prohibited.                      ║
   ║  AuditIQ™ is a trademark of Slaite MCP.                     ║
-  ║  info@slaite.co.za                                          ║
+  ║  admin@slaite.co.za                                         ║
   ╚══════════════════════════════════════════════════════════════╝
 -->
 <html lang="en">
@@ -194,28 +194,107 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 24p
 <!-- PLATFORM PREVIEW -->
 <div class="preview">
   <div class="preview-wrap">
-    <div class="preview-bar">
-      <div class="dot" style="background:#FF5F57"></div>
-      <div class="dot" style="background:#FFBD2E"></div>
-      <div class="dot" style="background:#28C840"></div>
-      <div class="preview-title">AuditIQ — Integrated Audit Dashboard · ABC Engineering · 16 July 2026 · Lead auditor: E. Fredericks</div>
-    </div>
-    <div class="preview-content">
-      <div class="prev-card"><div class="prev-std" style="color:#58A6FF">ISO 9001:2015</div><div class="prev-pct" style="color:#58A6FF">78%</div><div class="prev-bar"><div class="prev-bar-fill" style="width:78%;background:#58A6FF"></div></div><div class="prev-det">18/23 clauses · 3 findings</div></div>
-      <div class="prev-card"><div class="prev-std" style="color:#3FB950">ISO 14001:2015</div><div class="prev-pct" style="color:#3FB950">65%</div><div class="prev-bar"><div class="prev-bar-fill" style="width:65%;background:#3FB950"></div></div><div class="prev-det">15/23 clauses · 5 findings</div></div>
-      <div class="prev-card"><div class="prev-std" style="color:#D29922">ISO 45001:2018</div><div class="prev-pct" style="color:#D29922">71%</div><div class="prev-bar"><div class="prev-bar-fill" style="width:71%;background:#D29922"></div></div><div class="prev-det">16/23 clauses · 4 findings</div></div>
-      <div class="prev-card"><div class="prev-std" style="color:#DB61A2">ISO 3834-2:2021</div><div class="prev-pct" style="color:#DB61A2">83%</div><div class="prev-bar"><div class="prev-bar-fill" style="width:83%;background:#DB61A2"></div></div><div class="prev-det">8/9 clauses · 2 findings</div></div>
-    </div>
-    <div style="padding:0 20px 20px">
-      <div class="prev-find">
-        <div class="pf-card" style="background:#2D0000;border:1px solid #F85149"><div class="pf-val" style="color:#F85149">4</div><div class="pf-lbl" style="color:#F85149">Major</div></div>
-        <div class="pf-card" style="background:#2D1E00;border:1px solid #D29922"><div class="pf-val" style="color:#D29922">5</div><div class="pf-lbl" style="color:#D29922">Minor</div></div>
-        <div class="pf-card" style="background:#1A3A21;border:1px solid #3FB950"><div class="pf-val" style="color:#3FB950">3</div><div class="pf-lbl" style="color:#3FB950">OFI</div></div>
-        <div class="pf-card" style="background:#0D2B5E;border:1px solid #58A6FF"><div class="pf-val" style="color:#58A6FF">2</div><div class="pf-lbl" style="color:#58A6FF">Observation</div></div>
+      <div class="preview-bar">
+        <div class="dot" style="background:#FF5F57"></div>
+        <div class="dot" style="background:#FFBD2E"></div>
+        <div class="dot" style="background:#28C840"></div>
+        <div class="preview-title">AuditIQ — Integrated Audit Dashboard · ABC Engineering · 17 July 2026 · Auditor: E. Fredericks</div>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;min-height:0">
+
+        <!-- LEFT: Score cards + one checklist row -->
+        <div style="border-right:1px solid #30363D;padding:16px">
+          <!-- Mini score cards -->
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:14px">
+            <div style="background:#0D1117;border-radius:8px;padding:10px 12px;border:1px solid #30363D">
+              <div style="font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#8B949E;margin-bottom:3px">Overall IMS</div>
+              <div style="font-size:26px;font-weight:700;color:#58A6FF;line-height:1">74%</div>
+              <div style="height:3px;background:#21262D;border-radius:2px;overflow:hidden;margin-top:5px"><div style="width:74%;height:100%;background:#58A6FF;border-radius:2px"></div></div>
+              <div style="font-size:8px;color:#484F58;margin-top:4px">14 findings · 4 major</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:5px">
+              <div style="background:#0D1117;border-radius:6px;padding:6px 10px;border:1px solid #30363D;display:flex;align-items:center;justify-content:space-between">
+                <div style="font-size:8px;font-weight:700;color:#58A6FF">ISO 9001</div>
+                <div><div style="font-size:14px;font-weight:700;color:#58A6FF">78%</div><div style="height:2px;background:#21262D;border-radius:2px;overflow:hidden;width:48px"><div style="width:78%;height:100%;background:#58A6FF"></div></div></div>
+              </div>
+              <div style="background:#0D1117;border-radius:6px;padding:6px 10px;border:1px solid #30363D;display:flex;align-items:center;justify-content:space-between">
+                <div style="font-size:8px;font-weight:700;color:#3FB950">ISO 14001</div>
+                <div><div style="font-size:14px;font-weight:700;color:#3FB950">65%</div><div style="height:2px;background:#21262D;border-radius:2px;overflow:hidden;width:48px"><div style="width:65%;height:100%;background:#3FB950"></div></div></div>
+              </div>
+              <div style="background:#0D1117;border-radius:6px;padding:6px 10px;border:1px solid #30363D;display:flex;align-items:center;justify-content:space-between">
+                <div style="font-size:8px;font-weight:700;color:#D29922">ISO 45001</div>
+                <div><div style="font-size:14px;font-weight:700;color:#D29922">71%</div><div style="height:2px;background:#21262D;border-radius:2px;overflow:hidden;width:48px"><div style="width:71%;height:100%;background:#D29922"></div></div></div>
+              </div>
+              <div style="background:#0D1117;border-radius:6px;padding:6px 10px;border:1px solid #30363D;display:flex;align-items:center;justify-content:space-between">
+                <div style="font-size:8px;font-weight:700;color:#DB61A2">ISO 3834-2</div>
+                <div><div style="font-size:14px;font-weight:700;color:#DB61A2">83%</div><div style="height:2px;background:#21262D;border-radius:2px;overflow:hidden;width:48px"><div style="width:83%;height:100%;background:#DB61A2"></div></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Single checklist row teaser -->
+          <div style="background:#0D1117;border:1px solid #30363D;border-radius:8px;overflow:hidden">
+            <div style="padding:5px 10px;background:#161B22;border-bottom:1px solid #30363D;font-size:8px;font-weight:700;color:#3FB950;text-transform:uppercase;letter-spacing:.08em">Live checklist — score a clause, finding auto-creates</div>
+            <div style="padding:8px 10px;display:grid;grid-template-columns:auto 1fr auto auto;gap:8px;align-items:center">
+              <div><span style="font-size:7px;font-weight:700;background:#0D2B5E;color:#58A6FF;padding:1px 4px;border-radius:3px;display:block;margin-bottom:2px">9001 §6.1</span><span style="font-size:7px;font-weight:700;background:#1A3A21;color:#3FB950;padding:1px 4px;border-radius:3px;display:block;margin-bottom:2px">14001 §6.1.2</span><span style="font-size:7px;font-weight:700;background:#2D1E00;color:#D29922;padding:1px 4px;border-radius:3px;display:block">45001 §6.1.2</span></div>
+              <div><div style="font-size:10px;font-weight:600;color:#E6EDF3;margin-bottom:2px">Risks, aspects &amp; hazards</div><div style="font-size:9px;color:#8B949E">Risk register, env. aspects, hazard ID — current and cross-linked</div></div>
+              <div style="display:flex;gap:2px"><div style="width:18px;height:18px;border-radius:4px;background:#2D0000;border:1px solid #F85149;font-size:9px;font-weight:700;color:#F85149;display:flex;align-items:center;justify-content:center">✓</div><div style="width:18px;height:18px;border-radius:4px;background:#21262D;border:1px solid #3D444D;font-size:9px;color:#484F58;display:flex;align-items:center;justify-content:center">1</div><div style="width:18px;height:18px;border-radius:4px;background:#21262D;border:1px solid #3D444D;font-size:9px;color:#484F58;display:flex;align-items:center;justify-content:center">2</div><div style="width:18px;height:18px;border-radius:4px;background:#21262D;border:1px solid #3D444D;font-size:9px;color:#484F58;display:flex;align-items:center;justify-content:center">3</div></div>
+              <div style="text-align:center"><span style="background:#2D0000;color:#F85149;border:1px solid #F85149;font-size:8px;font-weight:700;padding:3px 7px;border-radius:4px;display:block">MAJOR</span><div style="font-size:7px;color:#484F58;margin-top:2px;text-align:center">auto</div></div>
+            </div>
+            <div style="padding:4px 10px;background:#161B22;border-top:1px solid #30363D;font-size:8px;color:#484F58">+ 27 more clauses across all 4 standards →</div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Findings + mini bar chart -->
+        <div style="padding:16px">
+          <!-- Findings pills -->
+          <div style="font-size:8px;font-weight:700;color:#8B949E;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">Findings register — auto-populated</div>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:5px;margin-bottom:12px">
+            <div style="background:#2D0000;border:1px solid #F85149;border-radius:7px;padding:8px;text-align:center"><div style="font-size:20px;font-weight:700;color:#F85149;line-height:1">4</div><div style="font-size:7px;font-weight:700;color:#F85149;text-transform:uppercase;margin-top:2px">Major</div></div>
+            <div style="background:#2D1E00;border:1px solid #D29922;border-radius:7px;padding:8px;text-align:center"><div style="font-size:20px;font-weight:700;color:#D29922;line-height:1">5</div><div style="font-size:7px;font-weight:700;color:#D29922;text-transform:uppercase;margin-top:2px">Minor</div></div>
+            <div style="background:#1A3A21;border:1px solid #3FB950;border-radius:7px;padding:8px;text-align:center"><div style="font-size:20px;font-weight:700;color:#3FB950;line-height:1">3</div><div style="font-size:7px;font-weight:700;color:#3FB950;text-transform:uppercase;margin-top:2px">OFI</div></div>
+            <div style="background:#0D2B5E;border:1px solid #58A6FF;border-radius:7px;padding:8px;text-align:center"><div style="font-size:20px;font-weight:700;color:#58A6FF;line-height:1">2</div><div style="font-size:7px;font-weight:700;color:#58A6FF;text-transform:uppercase;margin-top:2px">Obs</div></div>
+          </div>
+
+          <!-- Mini clause bar chart -->
+          <div style="font-size:8px;font-weight:700;color:#8B949E;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px">Compliance by clause</div>
+          <div style="display:flex;flex-direction:column;gap:5px;margin-bottom:10px">
+            <div style="display:flex;align-items:center;gap:6px"><div style="font-size:8px;color:#8B949E;width:30px">Cl. 4</div><div style="flex:1;height:8px;background:#21262D;border-radius:3px;overflow:hidden;display:flex;gap:1px"><div style="width:25%;background:#58A6FF;border-radius:1px"></div><div style="width:20%;background:#3FB950"></div><div style="width:20%;background:#D29922"></div><div style="width:22%;background:#DB61A2;border-radius:0 1px 1px 0"></div></div><div style="font-size:8px;font-weight:700;color:#3FB950;width:24px">88%</div></div>
+            <div style="display:flex;align-items:center;gap:6px"><div style="font-size:8px;color:#8B949E;width:30px">Cl. 6</div><div style="flex:1;height:8px;background:#21262D;border-radius:3px;overflow:hidden;display:flex;gap:1px"><div style="width:16%;background:#58A6FF;border-radius:1px"></div><div style="width:8%;background:#3FB950"></div><div style="width:12%;background:#D29922;border-radius:0 1px 1px 0"></div></div><div style="font-size:8px;font-weight:700;color:#F85149;width:24px">38%</div></div>
+            <div style="display:flex;align-items:center;gap:6px"><div style="font-size:8px;color:#8B949E;width:30px">Cl. 7</div><div style="flex:1;height:8px;background:#21262D;border-radius:3px;overflow:hidden;display:flex;gap:1px"><div style="width:19%;background:#58A6FF;border-radius:1px"></div><div style="width:22%;background:#3FB950"></div><div style="width:22%;background:#D29922"></div><div style="width:22%;background:#DB61A2;border-radius:0 1px 1px 0"></div></div><div style="font-size:8px;font-weight:700;color:#D29922;width:24px">72%</div></div>
+            <div style="display:flex;align-items:center;gap:6px"><div style="font-size:8px;color:#8B949E;width:30px">Cl. 8</div><div style="flex:1;height:8px;background:#21262D;border-radius:3px;overflow:hidden;display:flex;gap:1px"><div style="width:22%;background:#58A6FF;border-radius:1px"></div><div style="width:22%;background:#3FB950"></div><div style="width:26%;background:#D29922"></div><div style="width:22%;background:#DB61A2;border-radius:0 1px 1px 0"></div></div><div style="font-size:8px;font-weight:700;color:#3FB950;width:24px">81%</div></div>
+            <div style="display:flex;align-items:center;gap:6px"><div style="font-size:8px;color:#8B949E;width:30px">Cl. 9</div><div style="flex:1;height:8px;background:#21262D;border-radius:3px;overflow:hidden;display:flex;gap:1px"><div style="width:24%;background:#58A6FF;border-radius:1px"></div><div style="width:17%;background:#3FB950"></div><div style="width:14%;background:#D29922;border-radius:0 1px 1px 0"></div></div><div style="font-size:8px;font-weight:700;color:#D29922;width:24px">58%</div></div>
+          </div>
+
+          <!-- Legend -->
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+            <div style="display:flex;align-items:center;gap:3px"><div style="width:7px;height:7px;border-radius:2px;background:#58A6FF"></div><span style="font-size:8px;color:#8B949E">9001</span></div>
+            <div style="display:flex;align-items:center;gap:3px"><div style="width:7px;height:7px;border-radius:2px;background:#3FB950"></div><span style="font-size:8px;color:#8B949E">14001</span></div>
+            <div style="display:flex;align-items:center;gap:3px"><div style="width:7px;height:7px;border-radius:2px;background:#D29922"></div><span style="font-size:8px;color:#8B949E">45001</span></div>
+            <div style="display:flex;align-items:center;gap:3px"><div style="width:7px;height:7px;border-radius:2px;background:#DB61A2"></div><span style="font-size:8px;color:#8B949E">3834-2</span></div>
+          </div>
+
+          <!-- Email bar -->
+          <div style="background:#0D1117;border:1px solid #30363D;border-radius:7px;padding:8px 12px;display:flex;align-items:center;justify-content:space-between">
+            <div style="font-size:9px;color:#8B949E">Report ready · Email findings on-site</div>
+            <div style="display:flex;gap:6px">
+              <span style="background:#1A3A21;color:#3FB950;border:1px solid #3FB950;font-size:8px;font-weight:700;padding:3px 8px;border-radius:4px">✉ Email report</span>
+              <span style="background:#0D2B5E;color:#58A6FF;border:1px solid #58A6FF;font-size:8px;font-weight:700;padding:3px 8px;border-radius:4px">⬇ Print</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom strip -->
+      <div style="padding:7px 16px;background:#161B22;border-top:1px solid #30363D;display:flex;align-items:center;justify-content:space-between">
+        <div style="display:flex;gap:16px">
+          <span style="font-size:8px;color:#484F58">✓ Score a clause — finding auto-creates</span>
+          <span style="font-size:8px;color:#484F58">✓ All 4 standards — one workflow</span>
+          <span style="font-size:8px;color:#484F58">✓ Report ready at the closing meeting</span>
+        </div>
+        <div style="font-size:8px;color:#3FB950;font-weight:700">Try it now →</div>
       </div>
     </div>
-  </div>
-</div>
 
 <hr class="divider">
 
@@ -334,15 +413,15 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 24p
   <p class="section-sub">Once-off implementation fee covers setup, branding, and onboarding. Monthly licence covers hosting, support, and all updates.</p>
   <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;gap:12px">
     <i class="ti ti-tool" style="color:var(--green-br);font-size:18px" aria-hidden="true"></i>
-    <div><div style="font-size:13px;font-weight:600">Once-off implementation fee: R 18,000</div><div style="font-size:12px;color:var(--text2)">Includes platform setup, your branding, and a 4-hour onboarding session. Platform live within 5 business days.</div></div>
+    <div><div style="font-size:13px;font-weight:600">Once-off implementation fee: from R 28,000</div><div style="font-size:12px;color:var(--text2)">Platform setup, branding, logo, colour scheme, onboarding and user training included. Live within 5 business days.</div></div>
   </div>
   <div class="price-grid">
     <div class="price-card">
       <div class="price-tier">Starter</div>
-      <div class="price-val">R 1,500 <span>/ month</span></div>
-      <div class="price-desc">1–3 users · Perfect for small teams and SHEQ consultants managing 1–3 clients</div>
+      <div class="price-val">R 2,500 <span>/ month</span></div>
+      <div class="price-desc">Up to 10 users included · Perfect for small teams and SHEQ consultants — no per-user counting</div>
       <ul class="price-features">
-        <li><i class="ti ti-check" aria-hidden="true"></i> All audit modules — integrated, gap, individual, supplier</li>
+        <li><i class="ti ti-check" aria-hidden="true"></i> Up to 10 users — no per-user fees</li>
         <li><i class="ti ti-check" aria-hidden="true"></i> ISO 19011 audit plan generator</li>
         <li><i class="ti ti-check" aria-hidden="true"></i> Findings register + email findings</li>
         <li><i class="ti ti-check" aria-hidden="true"></i> Audit history</li>
@@ -354,10 +433,10 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 24p
       <div class="price-rec">★ Most popular</div>
       <div class="price-tier">Professional</div>
       <div class="price-val">R 3,500 <span>/ month</span></div>
-      <div class="price-desc">Up to 10 users · Manufacturing, engineering, mining teams with multiple ISO certifications</div>
+      <div class="price-desc">Up to 15 users · Manufacturing, engineering and mining teams · Setup from R 45,000</div>
       <ul class="price-features">
         <li><i class="ti ti-check" aria-hidden="true"></i> Everything in Starter</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Up to 10 named users</li>
+        <li><i class="ti ti-check" aria-hidden="true"></i> Up to 15 users — no per-user fees</li>
         <li><i class="ti ti-check" aria-hidden="true"></i> Supplier audit module with separate report</li>
         <li><i class="ti ti-check" aria-hidden="true"></i> Quarterly platform updates</li>
         <li><i class="ti ti-check" aria-hidden="true"></i> Priority email support</li>
@@ -368,7 +447,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 24p
     <div class="price-card">
       <div class="price-tier">Enterprise</div>
       <div class="price-val">R 6,500 <span>/ month</span></div>
-      <div class="price-desc">Unlimited users · Multi-site operations and SHEQ consultants managing large portfolios</div>
+      <div class="price-desc">Unlimited users · Large groups, multi-site operations and certification bodies · Setup from R 60,000</div>
       <ul class="price-features">
         <li><i class="ti ti-check" aria-hidden="true"></i> Everything in Professional</li>
         <li><i class="ti ti-check" aria-hidden="true"></i> Unlimited users</li>
@@ -379,7 +458,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 24p
       </ul>
       <div class="price-btn" onclick="openDemo()">Get started</div>
     </div>
-    <div class="price-card" style="border-color:var(--blue-br)">
+    <div class="price-card" style="border-color:var(--border);opacity:0.6;display:none">
       <div class="price-tier" style="color:var(--blue-br)">Certification Body</div>
       <div class="price-val">Custom <span>pricing</span></div>
       <div class="price-desc">White-label · Multi-auditor · Per-audit fee model · For certification and accreditation bodies</div>
@@ -394,7 +473,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 24p
       <div class="price-btn" style="background:var(--blue-lt);color:var(--blue-br);border-color:var(--blue-br)" onclick="openDemo()">Talk to us</div>
     </div>
   </div>
-  <div style="text-align:center;margin-top:16px;font-size:12px;color:var(--text3)">All prices exclude VAT at 15% · ZAR · Minimum 12-month initial term · Month-to-month thereafter</div>
+  <div style="text-align:center;margin-top:16px;font-size:12px;color:var(--text3)">All prices exclude VAT at 15% · ZAR · Flat team pricing — no per-user fees · Minimum 12-month initial term · Month-to-month thereafter</div>
 </div>
 
 <hr class="divider">
@@ -478,6 +557,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 24p
 </div>
 <div class="toast" id="toast"></div>
 
-<script>(function(_0xe135d6,_0x3e287a){const _0x4914b7=a0_0x1d6d,_0x1034d2=_0xe135d6();while(!![]){try{const _0x3a54f4=parseInt(_0x4914b7(0xcd))/0x1*(-parseInt(_0x4914b7(0xca))/0x2)+parseInt(_0x4914b7(0xc1))/0x3*(parseInt(_0x4914b7(0xc9))/0x4)+parseInt(_0x4914b7(0xbf))/0x5+parseInt(_0x4914b7(0xb4))/0x6*(parseInt(_0x4914b7(0xc4))/0x7)+-parseInt(_0x4914b7(0xce))/0x8+-parseInt(_0x4914b7(0xd4))/0x9+-parseInt(_0x4914b7(0xc5))/0xa;if(_0x3a54f4===_0x3e287a)break;else _0x1034d2['push'](_0x1034d2['shift']());}catch(_0x1148a4){_0x1034d2['push'](_0x1034d2['shift']());}}}(a0_0x3bf7,0x5469f));const a0_0x19efbc=(function(){let _0x354cd8=!![];return function(_0x431b32,_0x5ade98){const _0x34e0e8=_0x354cd8?function(){const _0x5402ff=a0_0x1d6d;if(_0x5ade98){const _0xe62067=_0x5ade98[_0x5402ff(0xb9)](_0x431b32,arguments);return _0x5ade98=null,_0xe62067;}}:function(){};return _0x354cd8=![],_0x34e0e8;};}()),a0_0x24efaa=a0_0x19efbc(this,function(){const _0x36dbfb=a0_0x1d6d;if(a0_0x24efaa[_0x36dbfb(0xab)]()['toString']()[_0x36dbfb(0xc2)]('\x0a')!==-0x1)return;return a0_0x24efaa[_0x36dbfb(0xbe)]()['search'](_0x36dbfb(0xd2))['toString']()['constructor'](a0_0x24efaa)['search'](_0x36dbfb(0xd2));});function a0_0x3bf7(){const _0x47dbd8=['zI1VCMC','mtjSCuTot3a','C3r5Bgu','Ahr0Chm6lY9MB3jTC3bYzwuUAw8VzI94DNPLA295zq','vgHHBMSGEw91ia','zw1VzgfS','yxbWBhK','CMvTB3zL','zI1LBwfPBa','DMfSDwu','Dg9HC3q','Dg9tDhjPBMC','mJyXnJCXnwzQwfzRqG','yxbWBgLJyxrPB24VANnVBG','m0vkwNP5DW','Aw5KzxHpzG','qxvKAxrjusbezw1VifjLCxvLC3qG4Ocuia','mti2ode4m2fxu2zswa','mtu5nJm1mgj3AwDrra','Dgv4DenVBNrLBNq','Aw5JBhvKzxm','q29UBMvJDgLVBIbLCNjVCI4GugXLyxnLigvTywLSihvZigrPCMvJDgX5igf0igLUzM9aC2XHAxrLlMnVlNPH','mtK5mty4nhjxu2DKva','mti3mZuWBLHPCgzH','DhjPBq','u29TzxrOAw5NihDLBNqGD3jVBMCUifbSzwfZzsbLBwfPBcb1CYbKAxjLy3rSEsbHDcbPBMzVqhnSywL0zs5JBY56yq','nvzxDxjqDq','mJKWmJGZmMvKte9Vsq','zgvTBY1MB3jT','y2XHC3nmAxn0','zI1Uyw1L','kcGOlISPkYKRksSK','ue9tva','mtC3mJGXmw5gugXpuW','C3rYAw5NAwz5','ugXLyxnLigvUDgvYigeGDMfSAwqGzw1HAwWGywrKCMvZCY4','isbzB3vYigrLBw8GCMvXDwvZDcbOyxmGyMvLBIbYzwnLAxzLzc4Gv2uGD2LSBcbJB250ywn0ihLVDsbHDca','CxvLCNLtzwXLy3rVCG','mc43','y2vUDgvY','z2v0rwXLBwvUDej5swq','yMLUza','B3bHy2L0Eq','zI1YB2XL','uMvXDwvZDcbKzw1ViokaLcbUBYbJB3n0lcbUBYbJB21TAxrTzw50','ihDPDgHPBIa0igj1C2LUzxnZigHVDxjZlG','ywrK','ugXLyxnLigvUDgvYihLVDxiGBMfTzsbHBMqGzw1HAwWU','lMrLBw8TzM9YBsaUyNrUlxbYAw1HCNK'];a0_0x3bf7=function(){return _0x47dbd8;};return a0_0x3bf7();}a0_0x24efaa();function a0_0x1d6d(_0x514367,_0xf4874e){_0x514367=_0x514367-0xa7;const _0x4cceb4=a0_0x3bf7();let _0x24efaa=_0x4cceb4[_0x514367];if(a0_0x1d6d['wyhDTn']===undefined){var _0x19efbc=function(_0x2ac099){const _0x59053f='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x1490bf='',_0x2f5201='',_0x1a10e4=_0x1490bf+_0x19efbc,_0x354cd8=(''+function(){return 0x0;})['indexOf']('\x0a')!==-0x1;for(let _0x431b32=0x0,_0x5ade98,_0x34e0e8,_0xe62067=0x0;_0x34e0e8=_0x2ac099['charAt'](_0xe62067++);~_0x34e0e8&&(_0x5ade98=_0x431b32%0x4?_0x5ade98*0x40+_0x34e0e8:_0x34e0e8,_0x431b32++%0x4)?_0x1490bf+=_0x354cd8||_0x1a10e4['charCodeAt'](_0xe62067+0xa)-0xa!==0x0?String['fromCharCode'](0xff&_0x5ade98>>(-0x2*_0x431b32&0x6)):_0x431b32:0x0){_0x34e0e8=_0x59053f['indexOf'](_0x34e0e8);}for(let _0xb0b93c=0x0,_0x5eb317=_0x1490bf['length'];_0xb0b93c<_0x5eb317;_0xb0b93c++){_0x2f5201+='%'+('00'+_0x1490bf['charCodeAt'](_0xb0b93c)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x2f5201);};a0_0x1d6d['OlHaHN']=_0x19efbc,a0_0x1d6d['rQsyuU']={},a0_0x1d6d['wyhDTn']=!![];}const _0x3bf7f5=_0x4cceb4[0x0],_0x1d6db2=_0x514367+_0x3bf7f5,_0x49ee74=a0_0x1d6d['rQsyuU'][_0x1d6db2];if(!_0x49ee74){const _0x345029=function(_0x92f703){this['TayIiR']=_0x92f703,this['HtDwJP']=[0x1,0x0,0x0],this['mfFRaY']=function(){return'newState';},this['UUntXa']='\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a',this['CLUEyL']='\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d';};_0x345029['prototype']['dRlwxs']=function(){const _0x250858=new RegExp(this['UUntXa']+this['CLUEyL']),_0x5c95ed=_0x250858['test'](this['mfFRaY']['toString']())?--this['HtDwJP'][0x1]:--this['HtDwJP'][0x0];return this['yFGjhg'](_0x5c95ed);},_0x345029['prototype']['yFGjhg']=function(_0x380f81){if(!Boolean(~_0x380f81))return _0x380f81;return this['fXxove'](this['TayIiR']);},_0x345029['prototype']['fXxove']=function(_0x5a1e2f){for(let _0x5a71a9=0x0,_0x57be41=this['HtDwJP']['length'];_0x5a71a9<_0x57be41;_0x5a71a9++){this['HtDwJP']['push'](Math['round'](Math['random']())),_0x57be41=this['HtDwJP']['length'];}return _0x5a1e2f(this['HtDwJP'][0x0]);},(''+function(){return 0x0;})['indexOf']('\x0a')===-0x1&&new _0x345029(a0_0x1d6d)['dRlwxs'](),_0x24efaa=a0_0x1d6d['OlHaHN'](_0x24efaa),a0_0x1d6d['rQsyuU'][_0x1d6db2]=_0x24efaa;}else _0x24efaa=_0x49ee74;return _0x24efaa;}function openDemo(){const _0x20e6a0=a0_0x1d6d,_0xb0b93c=document[_0x20e6a0(0xaa)](_0x20e6a0(0xcf));_0xb0b93c&&_0xb0b93c['scrollIntoView']({'behavior':'smooth','block':_0x20e6a0(0xa9)});}async function submitDemo(){const _0x30106c=a0_0x1d6d,_0x5eb317=document[_0x30106c(0xaa)](_0x30106c(0xd1))[_0x30106c(0xbc)][_0x30106c(0xcb)](),_0x345029=document['getElementById'](_0x30106c(0xb3))[_0x30106c(0xbc)][_0x30106c(0xcb)](),_0x92f703=document['getElementById'](_0x30106c(0xbb))[_0x30106c(0xbc)][_0x30106c(0xcb)](),_0x250858=document[_0x30106c(0xaa)]('f-role')[_0x30106c(0xbc)],_0x5c95ed=document[_0x30106c(0xaa)]('f-stds')['value'];if(!_0x5eb317||!_0x92f703){showToast(_0x30106c(0xb1));return;}if(!_0x92f703[_0x30106c(0xc7)]('@')){showToast(_0x30106c(0xd6));return;}const _0x380f81=document[_0x30106c(0xa7)](_0x30106c(0xb2));_0x380f81&&(_0x380f81[_0x30106c(0xc6)]='Sending...',_0x380f81['style'][_0x30106c(0xac)]=_0x30106c(0xa8));try{const _0x5a1e2f=await fetch(_0x30106c(0xb6),{'method':_0x30106c(0xd3),'headers':{'Content-Type':_0x30106c(0xc0),'Accept':'application/json'},'body':JSON[_0x30106c(0xd5)]({'name':_0x5eb317,'organisation':_0x345029,'email':_0x92f703,'role':_0x250858,'standards':_0x5c95ed,'_subject':_0x30106c(0xc3)+(_0x345029||_0x5eb317),'_replyto':_0x92f703})});_0x5a1e2f['ok']?(document[_0x30106c(0xaa)]('mdl-msg')[_0x30106c(0xc6)]=_0x30106c(0xb7)+_0x5eb317+_0x30106c(0xd7)+_0x92f703+_0x30106c(0xaf),document[_0x30106c(0xaa)](_0x30106c(0xb8))[_0x30106c(0xd0)][_0x30106c(0xb0)]('on'),document[_0x30106c(0xaa)]('f-name')[_0x30106c(0xbc)]='',document['getElementById'](_0x30106c(0xb3))['value']='',document['getElementById'](_0x30106c(0xbb))[_0x30106c(0xbc)]='',document[_0x30106c(0xaa)](_0x30106c(0xad))[_0x30106c(0xbc)]=''):showToast(_0x30106c(0xcc));}catch(_0x5a71a9){showToast(_0x30106c(0xc8));}_0x380f81&&(_0x380f81[_0x30106c(0xc6)]=_0x30106c(0xae),_0x380f81[_0x30106c(0xb5)][_0x30106c(0xac)]='1');}function showToast(_0x57be41){const _0x52145d=a0_0x1d6d,_0x523f21=document[_0x52145d(0xaa)](_0x52145d(0xbd));_0x523f21[_0x52145d(0xc6)]=_0x57be41,_0x523f21[_0x52145d(0xd0)][_0x52145d(0xb0)]('on'),setTimeout(()=>_0x523f21[_0x52145d(0xd0)][_0x52145d(0xba)]('on'),0xaf0);}</script>
+<script>(function(_0x4b4f83,_0x211ba4){const _0x58823=a0_0x4d3b,_0x19ce89=_0x4b4f83();while(!![]){try{const _0x30fc09=-parseInt(_0x58823(0xc1))/0x1*(-parseInt(_0x58823(0xca))/0x2)+parseInt(_0x58823(0xc2))/0x3*(-parseInt(_0x58823(0xe0))/0x4)+parseInt(_0x58823(0xde))/0x5*(parseInt(_0x58823(0xec))/0x6)+-parseInt(_0x58823(0xc0))/0x7+-parseInt(_0x58823(0xda))/0x8+parseInt(_0x58823(0xd8))/0x9*(parseInt(_0x58823(0xbf))/0xa)+parseInt(_0x58823(0xcd))/0xb*(parseInt(_0x58823(0xee))/0xc);if(_0x30fc09===_0x211ba4)break;else _0x19ce89['push'](_0x19ce89['shift']());}catch(_0x5cf4b7){_0x19ce89['push'](_0x19ce89['shift']());}}}(a0_0x321f,0x8b6ed));function a0_0x4d3b(_0x2a6f3f,_0x28b486){_0x2a6f3f=_0x2a6f3f-0xbf;const _0x256466=a0_0x321f();let _0x2dd19f=_0x256466[_0x2a6f3f];if(a0_0x4d3b['PNXgLs']===undefined){var _0x16ee9a=function(_0x18ef10){const _0x3bf237='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x5a7883='',_0x5891c2='',_0x3a7085=_0x5a7883+_0x16ee9a,_0x756e4=(''+function(){return 0x0;})['indexOf']('\x0a')!==-0x1;for(let _0x139f68=0x0,_0x32f56c,_0x563d66,_0x11cd6c=0x0;_0x563d66=_0x18ef10['charAt'](_0x11cd6c++);~_0x563d66&&(_0x32f56c=_0x139f68%0x4?_0x32f56c*0x40+_0x563d66:_0x563d66,_0x139f68++%0x4)?_0x5a7883+=_0x756e4||_0x3a7085['charCodeAt'](_0x11cd6c+0xa)-0xa!==0x0?String['fromCharCode'](0xff&_0x32f56c>>(-0x2*_0x139f68&0x6)):_0x139f68:0x0){_0x563d66=_0x3bf237['indexOf'](_0x563d66);}for(let _0x3f77cd=0x0,_0x452241=_0x5a7883['length'];_0x3f77cd<_0x452241;_0x3f77cd++){_0x5891c2+='%'+('00'+_0x5a7883['charCodeAt'](_0x3f77cd)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5891c2);};a0_0x4d3b['UWvKCN']=_0x16ee9a,a0_0x4d3b['qaORFZ']={},a0_0x4d3b['PNXgLs']=!![];}const _0x321f75=_0x256466[0x0],_0x4d3be2=_0x2a6f3f+_0x321f75,_0x3008cd=a0_0x4d3b['qaORFZ'][_0x4d3be2];if(!_0x3008cd){const _0xb316ce=function(_0x50e1d8){this['BrRkjP']=_0x50e1d8,this['HkdQyx']=[0x1,0x0,0x0],this['YctIaF']=function(){return'newState';},this['EswdcO']='\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a',this['PHBYem']='\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d';};_0xb316ce['prototype']['Ivznkx']=function(){const _0x3bb9d3=new RegExp(this['EswdcO']+this['PHBYem']),_0x5cf96d=_0x3bb9d3['test'](this['YctIaF']['toString']())?--this['HkdQyx'][0x1]:--this['HkdQyx'][0x0];return this['iSbMrn'](_0x5cf96d);},_0xb316ce['prototype']['iSbMrn']=function(_0x4a678d){if(!Boolean(~_0x4a678d))return _0x4a678d;return this['FfoWxK'](this['BrRkjP']);},_0xb316ce['prototype']['FfoWxK']=function(_0x44cd7e){for(let _0x574d86=0x0,_0x4c6552=this['HkdQyx']['length'];_0x574d86<_0x4c6552;_0x574d86++){this['HkdQyx']['push'](Math['round'](Math['random']())),_0x4c6552=this['HkdQyx']['length'];}return _0x44cd7e(this['HkdQyx'][0x0]);},(''+function(){return 0x0;})['indexOf']('\x0a')===-0x1&&new _0xb316ce(a0_0x4d3b)['Ivznkx'](),_0x2dd19f=a0_0x4d3b['UWvKCN'](_0x2dd19f),a0_0x4d3b['qaORFZ'][_0x4d3be2]=_0x2dd19f;}else _0x2dd19f=_0x3008cd;return _0x2dd19f;}const a0_0x16ee9a=(function(){let _0x756e4=!![];return function(_0x139f68,_0x32f56c){const _0x563d66=_0x756e4?function(){const _0x482653=a0_0x4d3b;if(_0x32f56c){const _0x11cd6c=_0x32f56c[_0x482653(0xc7)](_0x139f68,arguments);return _0x32f56c=null,_0x11cd6c;}}:function(){};return _0x756e4=![],_0x563d66;};}()),a0_0x2dd19f=a0_0x16ee9a(this,function(){const _0x4c5d76=a0_0x4d3b;if(a0_0x2dd19f[_0x4c5d76(0xd3)]()[_0x4c5d76(0xc9)]()[_0x4c5d76(0xd1)]('\x0a')!==-0x1)return;return a0_0x2dd19f[_0x4c5d76(0xc9)]()[_0x4c5d76(0xe7)]('(((.+)+)+)+$')[_0x4c5d76(0xc9)]()[_0x4c5d76(0xf0)](a0_0x2dd19f)[_0x4c5d76(0xe7)](_0x4c5d76(0xe2));});a0_0x2dd19f();function openDemo(){const _0x53f9aa=a0_0x4d3b,_0x3f77cd=document['getElementById'](_0x53f9aa(0xce));_0x3f77cd&&_0x3f77cd[_0x53f9aa(0xd7)]({'behavior':_0x53f9aa(0xcb),'block':'center'});}async function submitDemo(){const _0x2c2d74=a0_0x4d3b,_0x452241=document[_0x2c2d74(0xcc)]('f-name')['value'][_0x2c2d74(0xd0)](),_0xb316ce=document[_0x2c2d74(0xcc)]('f-org')[_0x2c2d74(0xed)][_0x2c2d74(0xd0)](),_0x50e1d8=document[_0x2c2d74(0xcc)]('f-email')[_0x2c2d74(0xed)]['trim'](),_0x3bb9d3=document['getElementById'](_0x2c2d74(0xc6))[_0x2c2d74(0xed)],_0x5cf96d=document['getElementById'](_0x2c2d74(0xc8))[_0x2c2d74(0xed)];if(!_0x452241||!_0x50e1d8){showToast(_0x2c2d74(0xef));return;}if(!_0x50e1d8[_0x2c2d74(0xe8)]('@')){showToast(_0x2c2d74(0xdd));return;}const _0x4a678d=document[_0x2c2d74(0xe5)]('.demo-form\x20.btn-primary');_0x4a678d&&(_0x4a678d[_0x2c2d74(0xea)]='Sending...',_0x4a678d[_0x2c2d74(0xdc)]['opacity']=_0x2c2d74(0xcf));try{const _0x44cd7e=await fetch(_0x2c2d74(0xe1),{'method':_0x2c2d74(0xc5),'headers':{'Content-Type':_0x2c2d74(0xdf),'Accept':_0x2c2d74(0xdf)},'body':JSON[_0x2c2d74(0xe3)]({'name':_0x452241,'organisation':_0xb316ce,'email':_0x50e1d8,'role':_0x3bb9d3,'standards':_0x5cf96d,'_subject':_0x2c2d74(0xc4)+(_0xb316ce||_0x452241),'_replyto':_0x50e1d8})});_0x44cd7e['ok']?(document[_0x2c2d74(0xcc)](_0x2c2d74(0xd9))['textContent']=_0x2c2d74(0xe9)+_0x452241+'!\x20Your\x20demo\x20request\x20has\x20been\x20received.\x20We\x20will\x20contact\x20you\x20at\x20'+_0x50e1d8+_0x2c2d74(0xc3),document['getElementById']('emodal')[_0x2c2d74(0xe4)]['add']('on'),document[_0x2c2d74(0xcc)]('f-name')[_0x2c2d74(0xed)]='',document['getElementById']('f-org')[_0x2c2d74(0xed)]='',document[_0x2c2d74(0xcc)](_0x2c2d74(0xeb))[_0x2c2d74(0xed)]='',document[_0x2c2d74(0xcc)]('f-role')['value']=''):showToast(_0x2c2d74(0xd2));}catch(_0x574d86){showToast(_0x2c2d74(0xdb));}_0x4a678d&&(_0x4a678d[_0x2c2d74(0xea)]=_0x2c2d74(0xd4),_0x4a678d[_0x2c2d74(0xdc)][_0x2c2d74(0xd6)]='1');}function showToast(_0x4c6552){const _0x23f844=a0_0x4d3b,_0x58a330=document[_0x23f844(0xcc)]('toast');_0x58a330['textContent']=_0x4c6552,_0x58a330[_0x23f844(0xe4)][_0x23f844(0xe6)]('on'),setTimeout(()=>_0x58a330['classList'][_0x23f844(0xd5)]('on'),0xaf0);}function a0_0x321f(){const _0x5f202b=['y2XHC3nmAxn0','CxvLCNLtzwXLy3rVCG','ywrK','C2vHCMnO','Aw5JBhvKzxm','vgHHBMSGEw91ia','Dgv4DenVBNrLBNq','zI1LBwfPBa','mZiWntK3nev4zgDwqW','DMfSDwu','nteYnfbNAvbKzW','ugXLyxnLigvUDgvYihLVDxiGBMfTzsbHBMqGzw1HAwWU','y29UC3rYDwn0B3i','oty0odaWvfnOvKzJ','mJKXnJu2neP6wMfYAG','ndi4nZy0sgPAEvv5','mJiXmtbPAvzxAfq','ihDPDgHPBIa0igj1C2LUzxnZigHVDxjZlG','qxvKAxrjusbezw1VifjLCxvLC3qG4Ocuia','ue9tva','zI1YB2XL','yxbWBhK','zI1ZDgrZ','Dg9tDhjPBMC','nhfIsMLsAG','C21VB3rO','z2v0rwXLBwvUDej5swq','mJyWmJz5sg55z0W','zgvTBY1MB3jT','mc43','DhjPBq','Aw5KzxHpzG','u29TzxrOAw5NihDLBNqGD3jVBMCUifbSzwfZzsbLBwfPBcb1CYbKAxjLy3rSEsbHDcbPBMzVqhnSywL0zs5JBY56yq','yMLUza','uMvXDwvZDcbKzw1ViokaLcbUBYbJB3n0lcbUBYbJB21TAxrTzw50','CMvTB3zL','B3bHy2L0Eq','C2nYB2XSsw50B1zPzxC','mJDtC0XjvuK','BwrSlw1ZzW','oda4odi0meXwB2PWCq','q29UBMvJDgLVBIbLCNjVCI4GugXLyxnLigvTywLSihvZigrPCMvJDgX5igf0igLUzM9aC2XHAxrLlMnVlNPH','C3r5Bgu','ugXLyxnLigvUDgvYigeGDMfSAwqGzw1HAwWGywrKCMvZCY4','nw5iD1vcta','yxbWBgLJyxrPB24VANnVBG','mZC2q0nZAM1v','Ahr0Chm6lY9MB3jTC3bYzwuUAw8VzI94DNPLA295zq','kcGOlISPkYKRksSK','C3rYAw5NAwz5'];a0_0x321f=function(){return _0x5f202b;};return a0_0x321f();}</script>
 </body>
 </html>
