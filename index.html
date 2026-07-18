@@ -1,13 +1,6 @@
 <!DOCTYPE html>
-<!-- 
-  ╔══════════════════════════════════════════════════════════════╗
-  ║  AuditIQ — Integrated Management System Audit Platform      ║
-  ║  © 2026 Slaite Management Consultants & Projects            ║
-  ║  All rights reserved. Proprietary and confidential.         ║
-  ║  AuditIQ™ is a trademark of Slaite MCP.                     ║
-  ║  admin@slaite.co.za · WhatsApp: 083 764 5717               ║
-  ╚══════════════════════════════════════════════════════════════╝
--->
+<!-- Copyright 2026 Slaite Management Consultants & Projects. All rights reserved.
+     AuditIQ is a trademark of Slaite MCP. admin@slaite.co.za -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -409,70 +402,112 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 24p
 <div class="section" id="pricing">
   <div class="section-label">Pricing</div>
   <div class="section-title">Simple, transparent pricing.<br>Cancel anytime.</div>
-  <p class="section-sub">Once-off implementation fee covers setup, branding, and onboarding. Monthly licence covers hosting, support, and all updates.</p>
+  <p class="section-sub">Start with the standard you need most. Add more standards as your business grows. No per-user fees — flat team pricing throughout.</p>
   <div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:16px 20px;margin-bottom:24px;display:flex;align-items:center;gap:12px">
     <i class="ti ti-tool" style="color:var(--green-br);font-size:18px" aria-hidden="true"></i>
     <div><div style="font-size:13px;font-weight:600">Starter package — once-off implementation fee: R 30,000</div><div style="font-size:12px;color:var(--text2)">Platform setup, branding, logo, colour scheme, onboarding and user training included. Live within 5 business days.</div></div>
   </div>
-  <div class="price-grid">
+  <div class="price-grid" style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+
+    <!-- Single standard -->
     <div class="price-card">
-      <div class="price-tier">Starter</div>
-      <div class="price-val">R 2,500 <span>/ month</span></div>
-      <div style="font-size:13px;font-weight:700;color:var(--green-br);margin-bottom:4px">Setup: R 30,000 once-off</div><div class="price-desc">Up to 5 users · Small companies and SHEQ consultants · No per-user fees</div>
+      <div class="price-tier">Single Standard</div>
+      <div class="price-val">R 1,500 <span>/ month</span></div>
+      <div style="font-size:13px;font-weight:700;color:var(--green-br);margin-bottom:4px">Setup: R 30,000 once-off</div>
+      <div class="price-desc">Any ONE standard · ISO 9001 OR 14001 OR 45001 OR 3834-2 · Up to 5 users</div>
       <ul class="price-features">
-        <li><i class="ti ti-check" aria-hidden="true"></i> Up to 5 users — no per-user fees</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> ISO 19011 audit plan generator</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Findings register + email findings</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Audit history</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Email support</li>
+        <li><i class="ti ti-check"></i> Choose any single ISO standard</li>
+        <li><i class="ti ti-check"></i> Up to 5 users — no per-user fees</li>
+        <li><i class="ti ti-check"></i> Full audit checklist for chosen standard</li>
+        <li><i class="ti ti-check"></i> Gap analysis module</li>
+        <li><i class="ti ti-check"></i> Findings register + email findings</li>
+        <li><i class="ti ti-check"></i> Audit plan generator (ISO 19011)</li>
+        <li><i class="ti ti-check"></i> Executive report</li>
+        <li><i class="ti ti-check"></i> Email support</li>
       </ul>
       <div class="price-btn" onclick="openDemo()">Get started</div>
     </div>
-    <div class="price-card featured">
-      <div class="price-rec">★ Most popular</div>
-      <div class="price-tier">Professional</div>
-      <div class="price-val">R 3,500 <span>/ month</span></div>
-      <div style="font-size:13px;font-weight:700;color:var(--green-br);margin-bottom:4px">Setup: R 45,000 once-off</div><div class="price-desc">Up to 10 users · Manufacturing, engineering and mining teams · No per-user fees</div>
+
+    <!-- Dual standard -->
+    <div class="price-card">
+      <div class="price-tier">Dual Standard</div>
+      <div class="price-val">R 2,500 <span>/ month</span></div>
+      <div style="font-size:13px;font-weight:700;color:var(--green-br);margin-bottom:4px">Setup: R 40,000 once-off</div>
+      <div class="price-desc">Any TWO standards · Up to 5 users per standard</div>
       <ul class="price-features">
-        <li><i class="ti ti-check" aria-hidden="true"></i> Everything in Starter</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Up to 10 users — no per-user fees</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Supplier audit module with separate report</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Quarterly platform updates</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Priority email support</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Audit trend reporting</li>
+        <li><i class="ti ti-check"></i> Any two ISO standards combined</li>
+        <li><i class="ti ti-check"></i> Up to 5 users per standard</li>
+        <li><i class="ti ti-check"></i> Integrated checklist — shared clauses audited once</li>
+        <li><i class="ti ti-check"></i> Gap analysis for both standards</li>
+        <li><i class="ti ti-check"></i> Findings register + email findings</li>
+        <li><i class="ti ti-check"></i> Audit plan generator (ISO 19011)</li>
+        <li><i class="ti ti-check"></i> Executive report + full audit report</li>
+        <li><i class="ti ti-check"></i> Priority email support</li>
+      </ul>
+      <div class="price-btn" onclick="openDemo()">Get started</div>
+    </div>
+
+    <!-- Triple standard -->
+    <div class="price-card">
+      <div class="price-rec">★ Popular</div>
+      <div class="price-tier">Triple Standard</div>
+      <div class="price-val">R 3,500 <span>/ month</span></div>
+      <div style="font-size:13px;font-weight:700;color:var(--green-br);margin-bottom:4px">Setup: R 50,000 once-off</div>
+      <div class="price-desc">Any THREE standards · Up to 10 users · No per-user fees</div>
+      <ul class="price-features">
+        <li><i class="ti ti-check"></i> Any three ISO standards</li>
+        <li><i class="ti ti-check"></i> Up to 10 users — no per-user fees</li>
+        <li><i class="ti ti-check"></i> Fully integrated checklist</li>
+        <li><i class="ti ti-check"></i> Supplier audit module</li>
+        <li><i class="ti ti-check"></i> Gap analysis + executive report</li>
+        <li><i class="ti ti-check"></i> Quarterly platform updates</li>
+        <li><i class="ti ti-check"></i> Priority support</li>
       </ul>
       <div class="price-btn g" onclick="openDemo()">Get started</div>
     </div>
+
+    <!-- Full IMS -->
+    <div class="price-card featured">
+      <div class="price-rec">★ Most popular</div>
+      <div class="price-tier">Full IMS</div>
+      <div class="price-val">R 5,500 <span>/ month</span></div>
+      <div style="font-size:13px;font-weight:700;color:var(--green-br);margin-bottom:4px">Setup: R 60,000 once-off</div>
+      <div class="price-desc">All 4 standards · ISO 9001 + 14001 + 45001 + 3834-2 · Up to 15 users</div>
+      <ul class="price-features">
+        <li><i class="ti ti-check"></i> All four ISO standards</li>
+        <li><i class="ti ti-check"></i> Up to 15 users — no per-user fees</li>
+        <li><i class="ti ti-check"></i> Full integrated audit + gap analysis</li>
+        <li><i class="ti ti-check"></i> Supplier audit — Mode A &amp; Mode B</li>
+        <li><i class="ti ti-check"></i> Executive report + gap report</li>
+        <li><i class="ti ti-check"></i> Audit plan generator (ISO 19011)</li>
+        <li><i class="ti ti-check"></i> Monthly check-in call</li>
+        <li><i class="ti ti-check"></i> 24-hour SLA response</li>
+        <li><i class="ti ti-check"></i> New features as developed</li>
+      </ul>
+      <div class="price-btn g" onclick="openDemo()">Get started</div>
+    </div>
+
+    <!-- Enterprise -->
     <div class="price-card">
       <div class="price-tier">Enterprise</div>
-      <div class="price-val">R 6,500 <span>/ month</span></div>
-      <div style="font-size:13px;font-weight:700;color:var(--green-br);margin-bottom:4px">Setup: R 60,000 once-off</div><div class="price-desc">Unlimited users · Large groups, multi-site operations and certification bodies · No per-user fees</div>
+      <div class="price-val">R 8,000 <span>/ month</span></div>
+      <div style="font-size:13px;font-weight:700;color:var(--green-br);margin-bottom:4px">Setup: from R 60,000</div>
+      <div class="price-desc">All 4 standards · Unlimited users · Multi-site · Certification bodies</div>
       <ul class="price-features">
-        <li><i class="ti ti-check" aria-hidden="true"></i> Everything in Professional</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Unlimited users</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Custom report templates</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> Monthly check-in call</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> 24-hour SLA response</li>
-        <li><i class="ti ti-check" aria-hidden="true"></i> New features as developed</li>
+        <li><i class="ti ti-check"></i> All four ISO standards</li>
+        <li><i class="ti ti-check"></i> Unlimited users — no per-user fees</li>
+        <li><i class="ti ti-check"></i> Multi-site deployment</li>
+        <li><i class="ti ti-check"></i> White-label option available</li>
+        <li><i class="ti ti-check"></i> Custom report templates</li>
+        <li><i class="ti ti-check"></i> Dedicated account manager</li>
+        <li><i class="ti ti-check"></i> 24-hour SLA response</li>
+        <li><i class="ti ti-check"></i> Training for your audit team</li>
       </ul>
       <div class="price-btn" onclick="openDemo()">Get started</div>
     </div>
-    <div class="price-card" style="border-color:var(--border);opacity:0.6;display:none">
-      <div class="price-tier" style="color:var(--blue-br)">Certification Body</div>
-      <div class="price-val">Custom <span>pricing</span></div>
-      <div class="price-desc">White-label · Multi-auditor · Per-audit fee model · For certification and accreditation bodies</div>
-      <ul class="price-features">
-        <li><i class="ti ti-check" style="color:var(--blue-br)" aria-hidden="true"></i> White-label with your branding</li>
-        <li><i class="ti ti-check" style="color:var(--blue-br)" aria-hidden="true"></i> Multi-auditor deployment</li>
-        <li><i class="ti ti-check" style="color:var(--blue-br)" aria-hidden="true"></i> Per-audit or annual fee model</li>
-        <li><i class="ti ti-check" style="color:var(--blue-br)" aria-hidden="true"></i> Client portal option</li>
-        <li><i class="ti ti-check" style="color:var(--blue-br)" aria-hidden="true"></i> Dedicated implementation support</li>
-        <li><i class="ti ti-check" style="color:var(--blue-br)" aria-hidden="true"></i> SLA + training included</li>
-      </ul>
-      <div class="price-btn" style="background:var(--blue-lt);color:var(--blue-br);border-color:var(--blue-br)" onclick="openDemo()">Talk to us</div>
-    </div>
+
   </div>
-  <div style="text-align:center;margin-top:16px;font-size:12px;color:var(--text3)">All prices exclude VAT at 15% · ZAR · Flat team pricing — no per-user fees · Minimum 12-month initial term · Month-to-month thereafter</div>
+  <div style="text-align:center;margin-top:16px;font-size:12px;color:var(--text3)">All prices exclude VAT at 15% · ZAR · Flat team pricing — no per-user fees · Start single standard, add more as you grow · Minimum 12-month initial term</div>
 </div>
 
 <hr class="divider">
@@ -571,6 +606,6 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:40px 24p
 </div>
 <div class="toast" id="toast"></div>
 
-<script>(function(_0x1806c7,_0x52a417){const _0x306083=a0_0x2650,_0x2e9f82=_0x1806c7();while(!![]){try{const _0x5393aa=parseInt(_0x306083(0xa2))/0x1+parseInt(_0x306083(0x8f))/0x2+-parseInt(_0x306083(0x92))/0x3*(-parseInt(_0x306083(0xa1))/0x4)+parseInt(_0x306083(0x9a))/0x5*(-parseInt(_0x306083(0x9c))/0x6)+-parseInt(_0x306083(0xaa))/0x7*(-parseInt(_0x306083(0x91))/0x8)+parseInt(_0x306083(0x85))/0x9*(-parseInt(_0x306083(0xa8))/0xa)+-parseInt(_0x306083(0xa7))/0xb;if(_0x5393aa===_0x52a417)break;else _0x2e9f82['push'](_0x2e9f82['shift']());}catch(_0x4d065d){_0x2e9f82['push'](_0x2e9f82['shift']());}}}(a0_0x35b2,0x7e15b));function a0_0x2650(_0x1bd859,_0x4c406){_0x1bd859=_0x1bd859-0x85;const _0x388f5b=a0_0x35b2();let _0x4322a0=_0x388f5b[_0x1bd859];if(a0_0x2650['SuydMw']===undefined){var _0x177144=function(_0x1dd650){const _0x31cd6c='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x49572a='',_0x100af6='',_0x5f0f05=_0x49572a+_0x177144,_0x56c448=(''+function(){return 0x0;})['indexOf']('\x0a')!==-0x1;for(let _0x4ecbcc=0x0,_0x147b06,_0x9ba0ee,_0x1e9846=0x0;_0x9ba0ee=_0x1dd650['charAt'](_0x1e9846++);~_0x9ba0ee&&(_0x147b06=_0x4ecbcc%0x4?_0x147b06*0x40+_0x9ba0ee:_0x9ba0ee,_0x4ecbcc++%0x4)?_0x49572a+=_0x56c448||_0x5f0f05['charCodeAt'](_0x1e9846+0xa)-0xa!==0x0?String['fromCharCode'](0xff&_0x147b06>>(-0x2*_0x4ecbcc&0x6)):_0x4ecbcc:0x0){_0x9ba0ee=_0x31cd6c['indexOf'](_0x9ba0ee);}for(let _0xa48c66=0x0,_0x239e8f=_0x49572a['length'];_0xa48c66<_0x239e8f;_0xa48c66++){_0x100af6+='%'+('00'+_0x49572a['charCodeAt'](_0xa48c66)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x100af6);};a0_0x2650['NZcuUC']=_0x177144,a0_0x2650['ELlPRU']={},a0_0x2650['SuydMw']=!![];}const _0x35b2d5=_0x388f5b[0x0],_0x26505a=_0x1bd859+_0x35b2d5,_0x34589=a0_0x2650['ELlPRU'][_0x26505a];if(!_0x34589){const _0x3fbb19=function(_0x58cf67){this['zAHbLw']=_0x58cf67,this['WFFMlW']=[0x1,0x0,0x0],this['yOBtbk']=function(){return'newState';},this['rsTqki']='\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a',this['QNoAmK']='\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d';};_0x3fbb19['prototype']['nkoOwf']=function(){const _0x3b0f4f=new RegExp(this['rsTqki']+this['QNoAmK']),_0x16e73f=_0x3b0f4f['test'](this['yOBtbk']['toString']())?--this['WFFMlW'][0x1]:--this['WFFMlW'][0x0];return this['FUxBJQ'](_0x16e73f);},_0x3fbb19['prototype']['FUxBJQ']=function(_0x435081){if(!Boolean(~_0x435081))return _0x435081;return this['vvUBkF'](this['zAHbLw']);},_0x3fbb19['prototype']['vvUBkF']=function(_0x40c192){for(let _0x38f948=0x0,_0xdaa67c=this['WFFMlW']['length'];_0x38f948<_0xdaa67c;_0x38f948++){this['WFFMlW']['push'](Math['round'](Math['random']())),_0xdaa67c=this['WFFMlW']['length'];}return _0x40c192(this['WFFMlW'][0x0]);},(''+function(){return 0x0;})['indexOf']('\x0a')===-0x1&&new _0x3fbb19(a0_0x2650)['nkoOwf'](),_0x4322a0=a0_0x2650['NZcuUC'](_0x4322a0),a0_0x2650['ELlPRU'][_0x26505a]=_0x4322a0;}else _0x4322a0=_0x34589;return _0x4322a0;}const a0_0x177144=(function(){let _0x56c448=!![];return function(_0x4ecbcc,_0x147b06){const _0x9ba0ee=_0x56c448?function(){if(_0x147b06){const _0x1e9846=_0x147b06['apply'](_0x4ecbcc,arguments);return _0x147b06=null,_0x1e9846;}}:function(){};return _0x56c448=![],_0x9ba0ee;};}()),a0_0x4322a0=a0_0x177144(this,function(){const _0x24a887=a0_0x2650;if(a0_0x4322a0[_0x24a887(0xb8)]()[_0x24a887(0x86)]()[_0x24a887(0xb0)]('\x0a')!==-0x1)return;return a0_0x4322a0[_0x24a887(0x86)]()[_0x24a887(0xad)](_0x24a887(0x8c))[_0x24a887(0x86)]()[_0x24a887(0x8e)](a0_0x4322a0)[_0x24a887(0xad)]('(((.+)+)+)+$');});a0_0x4322a0();function openDemo(){const _0x2b3993=a0_0x2650,_0xa48c66=document[_0x2b3993(0x93)]('demo-form');_0xa48c66&&_0xa48c66[_0x2b3993(0xa6)]({'behavior':_0x2b3993(0x9b),'block':'center'});}async function submitDemo(){const _0x24c83e=a0_0x2650,_0x239e8f=document['getElementById'](_0x24c83e(0xb4))[_0x24c83e(0xb5)][_0x24c83e(0x90)](),_0x3fbb19=document[_0x24c83e(0x93)](_0x24c83e(0xa4))['value']['trim'](),_0x58cf67=document[_0x24c83e(0x93)](_0x24c83e(0x87))['value'][_0x24c83e(0x90)](),_0x3b0f4f=document[_0x24c83e(0x93)](_0x24c83e(0xba))[_0x24c83e(0xb5)],_0x16e73f=document[_0x24c83e(0x93)](_0x24c83e(0x8a))[_0x24c83e(0xb5)],_0x435081=document[_0x24c83e(0x93)](_0x24c83e(0x88))?.['value']?.[_0x24c83e(0x90)]()||'';if(!_0x239e8f||!_0x58cf67){showToast(_0x24c83e(0x98));return;}if(!_0x3fbb19){showToast(_0x24c83e(0x95));return;}if(!_0x435081){showToast(_0x24c83e(0xaf));return;}if(!_0x58cf67['includes']('@')){showToast('Please\x20enter\x20a\x20valid\x20email\x20address.');return;}const _0x40c192=document[_0x24c83e(0x9d)]('.demo-form\x20.btn-primary');_0x40c192&&(_0x40c192['textContent']=_0x24c83e(0xae),_0x40c192[_0x24c83e(0xa5)][_0x24c83e(0xa3)]=_0x24c83e(0xb9));try{const _0x38f948=await fetch(_0x24c83e(0x89),{'method':_0x24c83e(0xac),'headers':{'Content-Type':_0x24c83e(0x97),'Accept':'application/json'},'body':JSON['stringify']({'name':_0x239e8f,'organisation':_0x3fbb19,'email':_0x58cf67,'phone':document[_0x24c83e(0x93)](_0x24c83e(0x88))?.[_0x24c83e(0xb5)]||_0x24c83e(0xb2),'role':_0x3b0f4f,'standards':_0x16e73f,'sent_to':_0x24c83e(0x9f),'_subject':_0x24c83e(0xa9)+(_0x3fbb19||_0x239e8f),'_replyto':_0x58cf67})});_0x38f948['ok']?(document[_0x24c83e(0x93)](_0x24c83e(0x9e))[_0x24c83e(0x94)]=_0x24c83e(0x99)+_0x239e8f+_0x24c83e(0x8d)+_0x3fbb19+'!\x20Your\x20demo\x20request\x20has\x20been\x20sent\x20directly\x20to\x20admin@slaite.co.za.\x20We\x20will\x20contact\x20you\x20at\x20'+_0x58cf67+_0x24c83e(0xab)+_0x435081+_0x24c83e(0xb6),document[_0x24c83e(0x93)]('emodal')['classList'][_0x24c83e(0x96)]('on'),document[_0x24c83e(0x93)](_0x24c83e(0xb4))[_0x24c83e(0xb5)]='',document[_0x24c83e(0x93)]('f-org')['value']='',document[_0x24c83e(0x93)]('f-email')['value']='',document['getElementById'](_0x24c83e(0xba))[_0x24c83e(0xb5)]=''):showToast('Something\x20went\x20wrong.\x20Please\x20email\x20us\x20directly\x20at\x20admin@slaite.co.za');}catch(_0xdaa67c){showToast(_0x24c83e(0x8b));}_0x40c192&&(_0x40c192[_0x24c83e(0x94)]=_0x24c83e(0xb1),_0x40c192[_0x24c83e(0xa5)][_0x24c83e(0xa3)]='1');}function showToast(_0x5427ac){const _0x1f42cc=a0_0x2650,_0x6ba407=document[_0x1f42cc(0x93)](_0x1f42cc(0xb7));_0x6ba407[_0x1f42cc(0x94)]=_0x5427ac,_0x6ba407[_0x1f42cc(0xa0)]['add']('on'),setTimeout(()=>_0x6ba407[_0x1f42cc(0xa0)][_0x1f42cc(0xb3)]('on'),0xaf0);}function a0_0x35b2(){const _0x3247db=['DhjPBq','mZy0odCXmKzWEMfMBG','nJKYn2HwqNfVqW','z2v0rwXLBwvUDej5swq','Dgv4DenVBNrLBNq','ugXLyxnLigvUDgvYihLVDxiGB3jNyw5PC2f0Aw9Uic8Gy29TCgfUEsbUyw1LlG','ywrK','yxbWBgLJyxrPB24VANnVBG','ugXLyxnLigvUDgvYihLVDxiGBMfTzsbHBMqGzw1HAwWGywrKCMvZCY4','vgHHBMSGEw91ia','nw1vwvjptW','C21VB3rO','mtm4otG0nMPVrgH5sq','CxvLCNLtzwXLy3rVCG','BwrSlw1ZzW','ywrTAw5aC2XHAxrLlMnVlNPH','y2XHC3nmAxn0','mtaWnfHds3DfBq','mtyWotiYweDHC01w','B3bHy2L0Eq','zI1VCMC','C3r5Bgu','C2nYB2XSsw50B1zPzxC','mJG2ode4nfbSrLnUBG','mtaXnZq2mefquwPTtG','qxvKAxrjusbezw1VifjLCxvLC3qG4Ocuia','n1v3zhDfwG','ig9Yig9Uia','ue9tva','C2vHCMnO','u2vUzgLUzY4UlG','ugXLyxnLigvUDgvYihLVDxiGy29UDgfJDcbUDw1IzxiU','Aw5KzxHpzG','uMvXDwvZDcbKzw1ViokaLcbUBYbJB3n0lcbUBYbJB21TAxrTzw50','tM90ihbYB3zPzgvK','CMvTB3zL','zI1Uyw1L','DMfSDwu','ihDPDgHPBIaXigj1C2LUzxnZigrHEs4','Dg9HC3q','yMLUza','mc43','zI1YB2XL','ntrAwujPqLu','Dg9tDhjPBMC','zI1LBwfPBa','zI1WAg9Uzq','Ahr0Chm6lY9MB3jTC3bYzwuUAw8VzI94DNPLA295zq','zI1ZDgrZ','q29UBMvJDgLVBIbLCNjVCI4GugXLyxnLigvTywLSihvZigrPCMvJDgX5igf0igfKBwLUqhnSywL0zs5JBY56yq','kcGOlISPkYKRksSK','igzYB20G','y29UC3rYDwn0B3i','odq1ndy4uxb0vNPl'];a0_0x35b2=function(){return _0x3247db;};return a0_0x35b2();}</script>
+<script>function a0_0x2fde(){const _0x3fdf0c=['ugXLyxnLigvUDgvYigeGDMfSAwqGzw1HAwWGywrKCMvZCY4','u2vUzgLUzY4UlG','zI1YB2XL','mZG3ntaXm2LdzefmqG','mZC4nZGZmLPKtNPAsa','ihDPDgHPBIaXigj1C2LUzxnZigrHEs4','mteWyLbwB0HN','ig9Yig9Uia','C3r5Bgu','Dg9HC3q','kcGOlISPkYKRksSK','Dgv4DenVBNrLBNq','z2v0rwXLBwvUDej5swq','zw1VzgfS','tM90ihbYB3zPzgvK','yxbWBgLJyxrPB24VANnVBG','y2vUDgvY','uMvXDwvZDcbKzw1ViokaLcbUBYbJB3n0lcbUBYbJB21TAxrTzw50','mc43','DMfSDwu','CMvTB3zL','Ahr0Chm6lY9MB3jTC3bYzwuUAw8VzI94DNPLA295zq','zI1WAg9Uzq','C3rYAw5NAwz5','ndC2odaYC0TfA09z','DhjPBq','mtK3mZvzveLKuw4','yMLUza','og5oCNPTta','y2XHC3nmAxn0','Aw5JBhvKzxm','y29UC3rYDwn0B3i','ndu4mJq0yNv1vM16','CxvLCNLtzwXLy3rVCG','zI1LBwfPBa','zI1Uyw1L','ywrTAw5aC2XHAxrLlMnVlNPH','C2nYB2XSsw50B1zPzxC','q29UBMvJDgLVBIbLCNjVCI4GugXLyxnLigvTywLSihvZigrPCMvJDgX5igf0igfKBwLUqhnSywL0zs5JBY56yq','isbzB3vYigrLBw8GCMvXDwvZDcbOyxmGyMvLBIbZzw50igrPCMvJDgX5ihrVigfKBwLUqhnSywL0zs5JBY56ys4Gv2uGD2LSBcbJB250ywn0ihLVDsbHDca','B3bHy2L0Eq','mtC2mti3meDpvwXtqq','mZm0ndr4CujPEfy','mtbZufHpEuS','C2vHCMnO','qxvKAxrjusbezw1VifjLCxvLC3qG4Ocuia','ugXLyxnLigvUDgvYihLVDxiGB3jNyw5PC2f0Aw9Uic8Gy29TCgfUEsbUyw1LlG','ue9tva','ywrK','igzYB20G','Dg9tDhjPBMC','BwrSlw1ZzW','zI1VCMC','yxbWBhK','vgHHBMSGEw91ia','C21VB3rO'];a0_0x2fde=function(){return _0x3fdf0c;};return a0_0x2fde();}function a0_0x2e4a(_0x175fc2,_0x34f5d7){_0x175fc2=_0x175fc2-0x16f;const _0x4372e9=a0_0x2fde();let _0x475fd6=_0x4372e9[_0x175fc2];if(a0_0x2e4a['qkSljV']===undefined){var _0x5071f8=function(_0xeb3b8e){const _0x302766='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x2ae600='',_0x5a49d4='',_0x181d42=_0x2ae600+_0x5071f8,_0x249b3f=(''+function(){return 0x0;})['indexOf']('\x0a')!==-0x1;for(let _0x24b328=0x0,_0x3312f8,_0x2f03e4,_0x4fe0f7=0x0;_0x2f03e4=_0xeb3b8e['charAt'](_0x4fe0f7++);~_0x2f03e4&&(_0x3312f8=_0x24b328%0x4?_0x3312f8*0x40+_0x2f03e4:_0x2f03e4,_0x24b328++%0x4)?_0x2ae600+=_0x249b3f||_0x181d42['charCodeAt'](_0x4fe0f7+0xa)-0xa!==0x0?String['fromCharCode'](0xff&_0x3312f8>>(-0x2*_0x24b328&0x6)):_0x24b328:0x0){_0x2f03e4=_0x302766['indexOf'](_0x2f03e4);}for(let _0xeffcd8=0x0,_0x3643aa=_0x2ae600['length'];_0xeffcd8<_0x3643aa;_0xeffcd8++){_0x5a49d4+='%'+('00'+_0x2ae600['charCodeAt'](_0xeffcd8)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(_0x5a49d4);};a0_0x2e4a['YsbVFC']=_0x5071f8,a0_0x2e4a['EiXcgN']={},a0_0x2e4a['qkSljV']=!![];}const _0x2fde76=_0x4372e9[0x0],_0x2e4a37=_0x175fc2+_0x2fde76,_0x465105=a0_0x2e4a['EiXcgN'][_0x2e4a37];if(!_0x465105){const _0x3abe58=function(_0x59b7e3){this['iJqpHe']=_0x59b7e3,this['nDfIWb']=[0x1,0x0,0x0],this['PdrTdn']=function(){return'newState';},this['prbAgl']='\x5c\x77\x2b\x20\x2a\x5c\x28\x5c\x29\x20\x2a\x7b\x5c\x77\x2b\x20\x2a',this['OZSIBr']='\x5b\x27\x7c\x22\x5d\x2e\x2b\x5b\x27\x7c\x22\x5d\x3b\x3f\x20\x2a\x7d';};_0x3abe58['prototype']['ANwxui']=function(){const _0x2acaec=new RegExp(this['prbAgl']+this['OZSIBr']),_0x4353ab=_0x2acaec['test'](this['PdrTdn']['toString']())?--this['nDfIWb'][0x1]:--this['nDfIWb'][0x0];return this['JbOUaw'](_0x4353ab);},_0x3abe58['prototype']['JbOUaw']=function(_0x480653){if(!Boolean(~_0x480653))return _0x480653;return this['yeUYwa'](this['iJqpHe']);},_0x3abe58['prototype']['yeUYwa']=function(_0x3d008a){for(let _0x5d150d=0x0,_0x422ac4=this['nDfIWb']['length'];_0x5d150d<_0x422ac4;_0x5d150d++){this['nDfIWb']['push'](Math['round'](Math['random']())),_0x422ac4=this['nDfIWb']['length'];}return _0x3d008a(this['nDfIWb'][0x0]);},(''+function(){return 0x0;})['indexOf']('\x0a')===-0x1&&new _0x3abe58(a0_0x2e4a)['ANwxui'](),_0x475fd6=a0_0x2e4a['YsbVFC'](_0x475fd6),a0_0x2e4a['EiXcgN'][_0x2e4a37]=_0x475fd6;}else _0x475fd6=_0x465105;return _0x475fd6;}(function(_0x56f11a,_0x5888d6){const _0x3ce7fd=a0_0x2e4a,_0x1ab575=_0x56f11a();while(!![]){try{const _0x50879a=parseInt(_0x3ce7fd(0x173))/0x1*(parseInt(_0x3ce7fd(0x175))/0x2)+parseInt(_0x3ce7fd(0x171))/0x3+-parseInt(_0x3ce7fd(0x179))/0x4+-parseInt(_0x3ce7fd(0x197))/0x5*(parseInt(_0x3ce7fd(0x183))/0x6)+parseInt(_0x3ce7fd(0x182))/0x7+parseInt(_0x3ce7fd(0x195))/0x8+-parseInt(_0x3ce7fd(0x194))/0x9*(parseInt(_0x3ce7fd(0x184))/0xa);if(_0x50879a===_0x5888d6)break;else _0x1ab575['push'](_0x1ab575['shift']());}catch(_0x467374){_0x1ab575['push'](_0x1ab575['shift']());}}}(a0_0x2fde,0x48131));const a0_0x5071f8=(function(){let _0x249b3f=!![];return function(_0x24b328,_0x3312f8){const _0x2f03e4=_0x249b3f?function(){const _0x181879=a0_0x2e4a;if(_0x3312f8){const _0x4fe0f7=_0x3312f8[_0x181879(0x18e)](_0x24b328,arguments);return _0x3312f8=null,_0x4fe0f7;}}:function(){};return _0x249b3f=![],_0x2f03e4;};}()),a0_0x475fd6=a0_0x5071f8(this,function(){const _0xd2664a=a0_0x2e4a;if(a0_0x475fd6[_0xd2664a(0x174)]()[_0xd2664a(0x18b)]()['indexOf']('\x0a')!==-0x1)return;return a0_0x475fd6[_0xd2664a(0x18b)]()['search'](_0xd2664a(0x19b))['toString']()[_0xd2664a(0x178)](a0_0x475fd6)[_0xd2664a(0x185)](_0xd2664a(0x19b));});a0_0x475fd6();function openDemo(){const _0x12c494=a0_0x2e4a,_0xeffcd8=document[_0x12c494(0x19d)]('demo-form');_0xeffcd8&&_0xeffcd8[_0x12c494(0x17e)]({'behavior':_0x12c494(0x190),'block':_0x12c494(0x1a1)});}async function submitDemo(){const _0x5be61b=a0_0x2e4a,_0x3643aa=document[_0x5be61b(0x19d)]('f-name')['value'][_0x5be61b(0x172)](),_0x3abe58=document[_0x5be61b(0x19d)]('f-org')['value'][_0x5be61b(0x172)](),_0x59b7e3=document[_0x5be61b(0x19d)](_0x5be61b(0x17b))[_0x5be61b(0x1a4)]['trim'](),_0x2acaec=document[_0x5be61b(0x19d)](_0x5be61b(0x193))['value'],_0x4353ab=document[_0x5be61b(0x19d)]('f-stds')['value'],_0x480653=document[_0x5be61b(0x19d)](_0x5be61b(0x16f))?.[_0x5be61b(0x1a4)]?.[_0x5be61b(0x172)]()||'';if(!_0x3643aa||!_0x59b7e3){showToast('Please\x20enter\x20your\x20name\x20and\x20email\x20address.');return;}if(!_0x3abe58){showToast(_0x5be61b(0x187));return;}if(!_0x480653){showToast('Please\x20enter\x20your\x20contact\x20number.');return;}if(!_0x59b7e3[_0x5be61b(0x177)]('@')){showToast(_0x5be61b(0x191));return;}const _0x3d008a=document[_0x5be61b(0x17a)]('.demo-form\x20.btn-primary');_0x3d008a&&(_0x3d008a[_0x5be61b(0x19c)]=_0x5be61b(0x192),_0x3d008a[_0x5be61b(0x199)][_0x5be61b(0x181)]=_0x5be61b(0x1a3));try{const _0x5d150d=await fetch(_0x5be61b(0x1a6),{'method':_0x5be61b(0x188),'headers':{'Content-Type':'application/json','Accept':_0x5be61b(0x1a0)},'body':JSON[_0x5be61b(0x170)]({'name':_0x3643aa,'organisation':_0x3abe58,'email':_0x59b7e3,'phone':document[_0x5be61b(0x19d)]('f-phone')?.[_0x5be61b(0x1a4)]||_0x5be61b(0x19f),'role':_0x2acaec,'standards':_0x4353ab,'sent_to':_0x5be61b(0x17d),'_subject':_0x5be61b(0x186)+(_0x3abe58||_0x3643aa),'_replyto':_0x59b7e3})});_0x5d150d['ok']?(document[_0x5be61b(0x19d)](_0x5be61b(0x18c))[_0x5be61b(0x19c)]=_0x5be61b(0x18f)+_0x3643aa+_0x5be61b(0x18a)+_0x3abe58+_0x5be61b(0x180)+_0x59b7e3+_0x5be61b(0x198)+_0x480653+_0x5be61b(0x196),document[_0x5be61b(0x19d)](_0x5be61b(0x19e))['classList'][_0x5be61b(0x189)]('on'),document['getElementById'](_0x5be61b(0x17c))[_0x5be61b(0x1a4)]='',document['getElementById'](_0x5be61b(0x18d))[_0x5be61b(0x1a4)]='',document['getElementById']('f-email')[_0x5be61b(0x1a4)]='',document[_0x5be61b(0x19d)](_0x5be61b(0x193))[_0x5be61b(0x1a4)]=''):showToast('Something\x20went\x20wrong.\x20Please\x20email\x20us\x20directly\x20at\x20admin@slaite.co.za');}catch(_0x422ac4){showToast(_0x5be61b(0x17f));}_0x3d008a&&(_0x3d008a[_0x5be61b(0x19c)]=_0x5be61b(0x1a2),_0x3d008a[_0x5be61b(0x199)]['opacity']='1');}function showToast(_0x229bf5){const _0xe72fa2=a0_0x2e4a,_0x39b909=document['getElementById'](_0xe72fa2(0x19a));_0x39b909['textContent']=_0x229bf5,_0x39b909[_0xe72fa2(0x176)]['add']('on'),setTimeout(()=>_0x39b909[_0xe72fa2(0x176)][_0xe72fa2(0x1a5)]('on'),0xaf0);}</script>
 </body>
 </html>
