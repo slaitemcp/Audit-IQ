@@ -185,7 +185,10 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
       <label style="font-size:11px;color:var(--text2);display:block;margin-bottom:4px">Email</label>
       <input type="email" id="auth-signin-email" class="fi" style="width:100%;margin-bottom:12px;box-sizing:border-box" placeholder="you@company.com">
       <label style="font-size:11px;color:var(--text2);display:block;margin-bottom:4px">Password</label>
-      <input type="password" id="auth-signin-password" class="fi" style="width:100%;margin-bottom:16px;box-sizing:border-box" placeholder="••••••••" onkeydown="if(event.key==='Enter')doSignIn()">
+      <div style="position:relative;margin-bottom:16px">
+        <input type="password" id="auth-signin-password" class="fi" style="width:100%;box-sizing:border-box;padding-right:36px" placeholder="••••••••" onkeydown="if(event.key==='Enter')doSignIn()">
+        <i class="ti ti-eye" onclick="togglePwVisibility('auth-signin-password', this)" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);cursor:pointer;color:var(--text3);font-size:16px"></i>
+      </div>
       <button class="btn btng" style="width:100%;justify-content:center;padding:10px" onclick="doSignIn()">Sign in</button>
       <div style="text-align:center;margin-top:14px;font-size:11px;color:var(--text3)">Don't have an account? <a href="#" onclick="showAuthMode('signup');return false" style="color:var(--blue-br)">Sign up</a></div>
     </div>
@@ -196,9 +199,15 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
       <label style="font-size:11px;color:var(--text2);display:block;margin-bottom:4px">Email</label>
       <input type="email" id="auth-signup-email" class="fi" style="width:100%;margin-bottom:12px;box-sizing:border-box" placeholder="you@company.com">
       <label style="font-size:11px;color:var(--text2);display:block;margin-bottom:4px">Password</label>
-      <input type="password" id="auth-signup-password" class="fi" style="width:100%;margin-bottom:12px;box-sizing:border-box" placeholder="At least 6 characters">
+      <div style="position:relative;margin-bottom:12px">
+        <input type="password" id="auth-signup-password" class="fi" style="width:100%;box-sizing:border-box;padding-right:36px" placeholder="At least 6 characters">
+        <i class="ti ti-eye" onclick="togglePwVisibility('auth-signup-password', this)" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);cursor:pointer;color:var(--text3);font-size:16px"></i>
+      </div>
       <label style="font-size:11px;color:var(--text2);display:block;margin-bottom:4px">Confirm password</label>
-      <input type="password" id="auth-signup-password2" class="fi" style="width:100%;margin-bottom:16px;box-sizing:border-box" placeholder="Re-enter password" onkeydown="if(event.key==='Enter')doSignUp()">
+      <div style="position:relative;margin-bottom:16px">
+        <input type="password" id="auth-signup-password2" class="fi" style="width:100%;box-sizing:border-box;padding-right:36px" placeholder="Re-enter password" onkeydown="if(event.key==='Enter')doSignUp()">
+        <i class="ti ti-eye" onclick="togglePwVisibility('auth-signup-password2', this)" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);cursor:pointer;color:var(--text3);font-size:16px"></i>
+      </div>
       <button class="btn btng" style="width:100%;justify-content:center;padding:10px" onclick="doSignUp()">Create account</button>
       <div style="text-align:center;margin-top:14px;font-size:11px;color:var(--text3)">Already have an account? <a href="#" onclick="showAuthMode('signin');return false" style="color:var(--blue-br)">Sign in</a></div>
     </div>
@@ -208,7 +217,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-siz
       <div style="font-size:14px;font-weight:700;color:var(--text);margin-top:10px">Verify your email</div>
       <div style="font-size:11px;color:var(--text2);margin-top:8px;line-height:1.5">We've sent a verification link to <strong id="auth-verify-email" style="color:var(--text)"></strong>. Click it, then come back here.</div>
       <button class="btn btng" style="width:100%;justify-content:center;padding:10px;margin-top:16px" onclick="checkVerified()">I've verified — continue</button>
-      <button class="btn" style="width:100%;justify-content:center;padding:8px;margin-top:8px;font-size:11px" onclick="resendVerification()">Resend email</button>
+      <button class="btn" id="auth-resend-btn" style="width:100%;justify-content:center;padding:8px;margin-top:8px;font-size:11px" onclick="resendVerification()">Resend email</button>
       <div style="margin-top:14px"><a href="#" onclick="doSignOut();return false" style="color:var(--text3);font-size:11px">Sign out</a></div>
     </div>
   </div>
@@ -2908,12 +2917,41 @@ function doSignIn(){
 function doSignOut(){
   if (auth) auth.signOut();
 }
-function resendVerification(){
-  if (auth && auth.currentUser) {
-    auth.currentUser.sendEmailVerification()
-      .then(() => showToast('Verification email sent'))
-      .catch(() => showToast('Could not send email \u2014 try again shortly'));
+function togglePwVisibility(inputId, iconEl){
+  const input = document.getElementById(inputId);
+  if (!input) return;
+  if (input.type === 'password') {
+    input.type = 'text';
+    iconEl.className = 'ti ti-eye-off';
+  } else {
+    input.type = 'password';
+    iconEl.className = 'ti ti-eye';
   }
+}
+function resendVerification(){
+  const btn = document.getElementById('auth-resend-btn');
+  if (!auth || !auth.currentUser) { showToast('Not signed in \u2014 try signing in again'); return; }
+  if (btn) { btn.disabled = true; btn.textContent = 'Sending\u2026'; }
+  auth.currentUser.sendEmailVerification()
+    .then(() => {
+      showToast('Verification email sent \u2014 check inbox and spam');
+      if (btn) {
+        let secs = 30;
+        btn.textContent = 'Resend available in ' + secs + 's';
+        const timer = setInterval(() => {
+          secs--;
+          if (secs <= 0) { clearInterval(timer); btn.disabled = false; btn.textContent = 'Resend email'; }
+          else { btn.textContent = 'Resend available in ' + secs + 's'; }
+        }, 1000);
+      }
+    })
+    .catch(err => {
+      const msg = err && err.code === 'auth/too-many-requests'
+        ? 'Too many requests \u2014 please wait a few minutes before trying again'
+        : 'Could not send email (' + (err && err.code ? err.code : 'unknown error') + ')';
+      showToast(msg);
+      if (btn) { btn.disabled = false; btn.textContent = 'Resend email'; }
+    });
 }
 function checkVerified(){
   if (!auth || !auth.currentUser) return;
